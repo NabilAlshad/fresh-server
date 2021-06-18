@@ -65,6 +65,6 @@ app.get("/", (req, res) => {
   res.send("welcome to fresh valley assingment");
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log("connected");
 });
